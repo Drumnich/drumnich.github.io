@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Delicious Food Truck - Helsinki's Best Street Food</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Mr. Delicious Food Truck Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#booking" class="btn-primary">Book Now</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Passion of Great Food</h1>
+            <p>Helsinki's favorite food truck serving delicious street food</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-secondary">View Menu</a>
+                <a href="#booking" class="btn-primary">Book for Your Event</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h2>Authentic Street Food Experience</h2>
+                    <p>Bringing the best flavors of street cuisine to Helsinki</p>
+                </div>
+                <div class="banner-icons">
+                    <div class="banner-icon">
+                        <i class="fas fa-utensils"></i>
+                        <span>Fresh Ingredients</span>
+                    </div>
+                    <div class="banner-icon">
+                        <i class="fas fa-truck"></i>
+                        <span>Mobile Service</span>
+                    </div>
+                    <div class="banner-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Event Catering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p class="section-subtitle">Delicious options made with love</p>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/philly-cheese-steak.jpg" alt="Philly Cheese Steak">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Philly Cheese Steak "Philadelphia"</h3>
+                        <p class="description">Our signature Philly cheese steak sandwich with thinly sliced ribeye steak, melted cheese, sautéed onions, and bell peppers on a toasted roll.</p>
+                        <p class="price">13€</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Popular</span>
+                            <span class="tag">Signature</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/crispy-chicken.jpg" alt="Crispy Chicken Sandwich">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Crispy Chicken Sandwich</h3>
+                        <p class="description">Perfectly crispy chicken sandwich with our special sauce, fresh lettuce, tomatoes, and pickles on a brioche bun.</p>
+                        <p class="price">12€</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Crispy</span>
+                            <span class="tag">Juicy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/philly-bowl.jpg" alt="Loaded Philly Cheese Steak Bowl">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Loaded Philly Cheese Steak Bowl</h3>
+                        <p class="description">All the flavors of our Philly cheese steak in a convenient bowl format with rice, vegetables, and our special sauce.</p>
+                        <p class="price">13.5€</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Hearty</span>
+                            <span class="tag">Filling</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/chicken-bowl.jpg" alt="Loaded Crispy Chicken Bowl">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Loaded Crispy Chicken Bowl</h3>
+                        <p class="description">Our crispy chicken with fresh vegetables, rice, and our signature sauce in a delicious bowl.</p>
+                        <p class="price">12.5€</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Healthy</span>
+                            <span class="tag">Flavorful</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-cta">
+                <p>All our dishes are made fresh to order with high-quality ingredients</p>
+                <a href="#booking" class="btn-primary">Book for Your Event</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The best Philly cheese steak I've had outside of Philadelphia! The flavors are amazing and the service is always friendly."</p>
+                        <p class="testimonial-author">- Maria K.</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Mr. Delicious catered our company event and everyone was impressed! The food was delicious and the service was excellent."</p>
+                        <p class="testimonial-author">- Jukka T.</p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The loaded crispy chicken bowl is my go-to lunch. Fresh, flavorful, and always satisfying!"</p>
+                        <p class="testimonial-author">- Sanna L.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <p class="section-subtitle">Follow our journey through Helsinki</p>
+            <div class="location-content">
+                <div class="location-map">
+                    <img src="images/helsinki-map.jpg" alt="Helsinki Map" class="map-image">
+                </div>
+                <div class="location-info">
+                    <p class="location-text">You can find our green food truck mainly from the central areas of Helsinki</p>
+                    <div class="location-features">
+                        <div class="location-feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Central Helsinki</span>
+                        </div>
+                        <div class="location-feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 11am-7pm</span>
+                        </div>
+                        <div class="location-feature">
+                            <i class="fas fa-calendar-week"></i>
+                            <span>Weekends: At Events</span>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <p>Follow us on social media for daily locations:</p>
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <p class="section-subtitle">Where you can find us next</p>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/pori-jazz.jpg" alt="Pori Jazz Festival">
+                        <div class="event-date">
+                            <span class="month">JUL</span>
+                            <span class="day">15-17</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Pori Jazz</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Pori, Finland</p>
+                        <p>Join us at Finland's biggest jazz festival where we'll be serving our delicious food!</p>
+                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/dark-river.jpg" alt="Dark River Festival">
+                        <div class="event-date">
+                            <span class="month">AUG</span>
+                            <span class="day">12-14</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Dark River Festival</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Kotka, Finland</p>
+                        <p>We're excited to be part of this amazing music festival. Come find us there!</p>
+                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/gaming-assembly.jpg" alt="Gaming Assembly">
+                        <div class="event-date">
+                            <span class="month">SEP</span>
+                            <span class="day">5-7</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Gaming Assembly</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Helsinki, Finland</p>
+                        <p>Fuel your gaming sessions with our delicious food at this gaming event!</p>
+                        <a href="#" class="event-link">Event Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Food Gallery</h2>
+            <p class="section-subtitle">A feast for your eyes</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery-1.jpg" alt="Food Image 1" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-2.jpg" alt="Food Image 2" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-3.jpg" alt="Food Image 3" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-4.jpg" alt="Food Image 4" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-5.jpg" alt="Food Image 5" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery-6.jpg" alt="Food Image 6" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery-modal">
+        <span class="gallery-close">&times;</span>
+        <img class="gallery-modal-content" id="modal-image">
+        <div class="gallery-modal-nav">
+            <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <section id="story" class="story-section">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p class="section-subtitle">The journey of Mr. Delicious</p>
+            <div class="story-content">
+                <div class="story-image">
+                    <img src="images/food-truck.jpg" alt="Mr. Delicious Food Truck">
+                </div>
+                <div class="story-text">
+                    <p>In 2022, I embarked on an exciting adventure that would change my life and the culinary landscape of Helsinki. With a deep love for street food and a desire to share my passion with the community, I launched my food truck, bringing the vibrant flavors of street cuisine to the heart of the city.</p>
+                    <p>From the bustling streets of Helsinki Centre to various festivals and events, I have had the privilege of serving countless customers. Each dish is crafted with care, inspired by the rich tapestry of flavors that street food has to offer. The warm response from the community has been overwhelming; it's the love and enthusiasm of my customers that have fueled my growth.</p>
+                    <p>As my food truck continues to roll through the streets of Helsinki, I remain dedicated to providing delicious, high-quality meals that bring people together. Thank you for being a part of this incredible journey. I look forward to serving you the best street food that our city has to offer!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Mr. Delicious?</h2>
+                <p>Book our food truck for your next event or find us in Helsinki!</p>
+                <div class="cta-buttons">
+                    <a href="#booking" class="btn-primary">Book Now</a>
+                    <a href="#location" class="btn-secondary">Find Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <h2>Book Mr. Delicious for Your Event</h2>
+            <p class="section-subtitle">Let us cater your next gathering</p>
+            <div class="booking-container">
+                <div class="booking-info">
+                    <h3>Why Book Mr. Delicious?</h3>
+                    <ul class="booking-features">
+                        <li><i class="fas fa-check"></i> Fresh, delicious food made on-site</li>
+                        <li><i class="fas fa-check"></i> Professional and friendly service</li>
+                        <li><i class="fas fa-check"></i> Flexible menu options</li>
+                        <li><i class="fas fa-check"></i> Perfect for corporate events</li>
+                        <li><i class="fas fa-check"></i> Great for festivals and private parties</li>
+                        <li><i class="fas fa-check"></i> Serving Helsinki and surrounding areas</li>
+                    </ul>
+                    <div class="booking-contact">
+                        <p>Have questions? Contact us directly:</p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@mrdelicious.fi">info@mrdelicious.fi</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:0449740038">044 974 0038</a></p>
+                    </div>
+                </div>
+                <form id="booking-form" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date">Event Date</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-time">Event Time</label>
+                        <input type="time" id="event-time" name="event-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-location">Event Location</label>
+                        <input type="text" id="event-location" name="event-location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Expected Number of Guests</label>
+                        <input type="number" id="guests" name="guests" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-type">Event Type</label>
+                        <select id="event-type" name="event-type" required>
+                            <option value="">Select Event Type</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="private">Private Party</option>
+                            <option value="festival">Festival</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Mr. Delicious Food Truck Logo" class="logo-small">
+                    <p>The Passion of Great Food</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@mrdelicious.fi">info@mrdelicious.fi</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:0449740038">044 974 0038</a></p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mr. Delicious Food Truck. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

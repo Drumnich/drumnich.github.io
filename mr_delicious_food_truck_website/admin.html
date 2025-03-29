@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Delicious Admin Panel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="login-container" class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <img src="images/logo.png" alt="Mr. Delicious Food Truck Logo" class="login-logo">
+                <h2>Admin Login</h2>
+            </div>
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <button id="login-btn" class="btn-primary">Login</button>
+                <p id="login-error" class="login-error"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="admin-panel" class="admin-panel" style="display: none;">
+        <header class="admin-header">
+            <div class="admin-logo">
+                <img src="images/logo.png" alt="Mr. Delicious Food Truck Logo" class="logo-small">
+                <h1>Admin Panel</h1>
+            </div>
+            <button id="logout-btn" class="btn-secondary">Logout</button>
+        </header>
+
+        <div class="admin-container">
+            <div class="admin-sidebar">
+                <ul class="admin-nav">
+                    <li class="active" data-tab="products">Products</li>
+                    <li data-tab="add-product">Add Product</li>
+                </ul>
+            </div>
+
+            <div class="admin-content">
+                <div id="products" class="admin-tab active">
+                    <h2>Manage Products</h2>
+                    <p>Edit product details and prices below:</p>
+                    
+                    <div class="product-list">
+                        <div class="product-item">
+                            <div class="product-info">
+                                <h3>Philly Cheesesteak</h3>
+                                <p>Our signature Philly cheesesteak sandwich with thinly sliced ribeye steak, melted cheese, sautéed onions, and bell peppers on a toasted roll.</p>
+                            </div>
+                            <div class="product-actions">
+                                <div class="price-edit">
+                                    <label for="price-1">Price (€):</label>
+                                    <input type="number" id="price-1" value="13" min="0" step="0.5">
+                                </div>
+                                <button class="save-btn" data-id="1">Save</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-item">
+                            <div class="product-info">
+                                <h3>Chicken Cheesesteak</h3>
+                                <p>Delicious chicken cheesesteak with tender chicken, melted cheese, and fresh vegetables on a toasted roll.</p>
+                            </div>
+                            <div class="product-actions">
+                                <div class="price-edit">
+                                    <label for="price-2">Price (€):</label>
+                                    <input type="number" id="price-2" value="12" min="0" step="0.5">
+                                </div>
+                                <button class="save-btn" data-id="2">Save</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-item">
+                            <div class="product-info">
+                                <h3>Philly Cheesesteak Bowl</h3>
+                                <p>All the flavors of our Philly cheesesteak in a convenient bowl format with rice, vegetables, and our special sauce.</p>
+                            </div>
+                            <div class="product-actions">
+                                <div class="price-edit">
+                                    <label for="price-3">Price (€):</label>
+                                    <input type="number" id="price-3" value="13.5" min="0" step="0.5">
+                                </div>
+                                <button class="save-btn" data-id="3">Save</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-item">
+                            <div class="product-info">
+                                <h3>Chicken Cheesesteak Bowl</h3>
+                                <p>Our chicken cheesesteak with fresh vegetables, rice, and our signature sauce in a delicious bowl.</p>
+                            </div>
+                            <div class="product-actions">
+                                <div class="price-edit">
+                                    <label for="price-4">Price (€):</label>
+                                    <input type="number" id="price-4" value="12.5" min="0" step="0.5">
+                                </div>
+                                <button class="save-btn" data-id="4">Save</button>
+                            </div>
+                        </div>
+                        
+                        <div class="product-item">
+                            <div class="product-info">
+                                <h3>Fries</h3>
+                                <p>Crispy golden fries, perfectly seasoned and served hot.</p>
+                            </div>
+                            <div class="product-actions">
+                                <div class="price-edit">
+                                    <label for="price-5">Price (€):</label>
+                                    <input type="number" id="price-5" value="5" min="0" step="0.5">
+                                </div>
+                                <button class="save-btn" data-id="5">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="add-product" class="admin-tab">
+                    <h2>Add New Product</h2>
+                    <p>Fill in the details to add a new product to the menu:</p>
+                    
+                    <form id="add-product-form" class="admin-form">
+                        <div class="form-group">
+                            <label for="product-name">Product Name</label>
+                            <input type="text" id="product-name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product-description">Description</label>
+                            <textarea id="product-description" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product-price">Price (€)</label>
+                            <input type="number" id="product-price" min="0" step="0.5" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product-tags">Tags (comma separated)</label>
+                            <input type="text" id="product-tags" placeholder="e.g. Popular, Spicy">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product-image">Image URL (optional)</label>
+                            <input type="text" id="product-image" placeholder="images/your-image.jpg">
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Add Product</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
