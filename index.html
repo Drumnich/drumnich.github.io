@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
+        <div class="logo-container left-logo">
             <img src="images/logo.png" alt="Mr. Delicious Food Truck Logo" class="logo">
         </div>
         <nav>
@@ -21,10 +21,12 @@
                 <li><a href="#location">Location</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#story">Our Story</a></li>
-                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#booking" class="btn-primary">Book Now</a></li>
             </ul>
         </nav>
+        <div class="logo-container right-logo">
+            <img src="images/logo.png" alt="Mr. Delicious Food Truck Logo" class="logo">
+        </div>
         <div class="hamburger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -78,8 +80,8 @@
                         <img src="images/philly-cheese-steak.jpg" alt="Philly Cheese Steak">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Philly Cheese Steak "Philadelphia"</h3>
-                        <p class="description">Our signature Philly cheese steak sandwich with thinly sliced ribeye steak, melted cheese, sautéed onions, and bell peppers on a toasted roll.</p>
+                        <h3>Philly Cheesesteak</h3>
+                        <p class="description">Our signature Philly cheesesteak sandwich with thinly sliced ribeye steak, melted cheese, sautéed onions, and bell peppers on a toasted roll.</p>
                         <p class="price">13€</p>
                         <div class="menu-item-tags">
                             <span class="tag">Popular</span>
@@ -89,25 +91,25 @@
                 </div>
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/crispy-chicken.jpg" alt="Crispy Chicken Sandwich">
+                        <img src="images/crispy-chicken.jpg" alt="Chicken Cheesesteak">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Crispy Chicken Sandwich</h3>
-                        <p class="description">Perfectly crispy chicken sandwich with our special sauce, fresh lettuce, tomatoes, and pickles on a brioche bun.</p>
+                        <h3>Chicken Cheesesteak</h3>
+                        <p class="description">Delicious chicken cheesesteak with tender chicken, melted cheese, and fresh vegetables on a toasted roll.</p>
                         <p class="price">12€</p>
                         <div class="menu-item-tags">
-                            <span class="tag">Crispy</span>
+                            <span class="tag">Tender</span>
                             <span class="tag">Juicy</span>
                         </div>
                     </div>
                 </div>
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/philly-bowl.jpg" alt="Loaded Philly Cheese Steak Bowl">
+                        <img src="images/philly-bowl.jpg" alt="Philly Cheesesteak Bowl">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Loaded Philly Cheese Steak Bowl</h3>
-                        <p class="description">All the flavors of our Philly cheese steak in a convenient bowl format with rice, vegetables, and our special sauce.</p>
+                        <h3>Philly Cheesesteak Bowl</h3>
+                        <p class="description">All the flavors of our Philly cheesesteak in a convenient bowl format with rice, vegetables, and our special sauce.</p>
                         <p class="price">13.5€</p>
                         <div class="menu-item-tags">
                             <span class="tag">Hearty</span>
@@ -117,15 +119,29 @@
                 </div>
                 <div class="menu-item">
                     <div class="menu-item-image">
-                        <img src="images/chicken-bowl.jpg" alt="Loaded Crispy Chicken Bowl">
+                        <img src="images/chicken-bowl.jpg" alt="Chicken Cheesesteak Bowl">
                     </div>
                     <div class="menu-item-content">
-                        <h3>Loaded Crispy Chicken Bowl</h3>
-                        <p class="description">Our crispy chicken with fresh vegetables, rice, and our signature sauce in a delicious bowl.</p>
+                        <h3>Chicken Cheesesteak Bowl</h3>
+                        <p class="description">Our chicken cheesesteak with fresh vegetables, rice, and our signature sauce in a delicious bowl.</p>
                         <p class="price">12.5€</p>
                         <div class="menu-item-tags">
                             <span class="tag">Healthy</span>
                             <span class="tag">Flavorful</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/fries.jpg" alt="Fries">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Fries</h3>
+                        <p class="description">Crispy golden fries, perfectly seasoned and served hot.</p>
+                        <p class="price">5€</p>
+                        <div class="menu-item-tags">
+                            <span class="tag">Crispy</span>
+                            <span class="tag">Side</span>
                         </div>
                     </div>
                 </div>
@@ -150,7 +166,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"The best Philly cheese steak I've had outside of Philadelphia! The flavors are amazing and the service is always friendly."</p>
+                        <p class="testimonial-text">"The best Philly cheesesteak I've had outside of Philadelphia! The flavors are amazing and the service is always friendly."</p>
                         <p class="testimonial-author">- Maria K.</p>
                     </div>
                 </div>
@@ -176,7 +192,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p class="testimonial-text">"The loaded crispy chicken bowl is my go-to lunch. Fresh, flavorful, and always satisfying!"</p>
+                        <p class="testimonial-text">"The chicken cheesesteak bowl is my go-to lunch. Fresh, flavorful, and always satisfying!"</p>
                         <p class="testimonial-author">- Sanna L.</p>
                     </div>
                 </div>
@@ -198,15 +214,12 @@
             <h2>Find Us</h2>
             <p class="section-subtitle">Follow our journey through Helsinki</p>
             <div class="location-content">
-                <div class="location-map">
-                    <img src="images/helsinki-map.jpg" alt="Helsinki Map" class="map-image">
-                </div>
                 <div class="location-info">
-                    <p class="location-text">You can find our green food truck mainly from the central areas of Helsinki</p>
+                    <p class="location-text">We operate throughout all of Helsinki, bringing our delicious food to various locations across the city.</p>
                     <div class="location-features">
                         <div class="location-feature">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Central Helsinki</span>
+                            <span>All of Helsinki</span>
                         </div>
                         <div class="location-feature">
                             <i class="fas fa-clock"></i>
@@ -284,60 +297,6 @@
         </div>
     </section>
 
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <h2>Food Gallery</h2>
-            <p class="section-subtitle">A feast for your eyes</p>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/gallery-1.jpg" alt="Food Image 1" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-2.jpg" alt="Food Image 2" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-3.jpg" alt="Food Image 3" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-4.jpg" alt="Food Image 4" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-5.jpg" alt="Food Image 5" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-6.jpg" alt="Food Image 6" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="gallery-modal">
-        <span class="gallery-close">&times;</span>
-        <img class="gallery-modal-content" id="modal-image">
-        <div class="gallery-modal-nav">
-            <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
-            <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
-        </div>
-    </div>
-
     <section id="story" class="story-section">
         <div class="container">
             <h2>Our Story</h2>
@@ -385,8 +344,8 @@
                     </ul>
                     <div class="booking-contact">
                         <p>Have questions? Contact us directly:</p>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@mrdelicious.fi">info@mrdelicious.fi</a></p>
-                        <p><i class="fas fa-phone"></i> <a href="tel:0449740038">044 974 0038</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:Sulaimanghazal88@gmail.com">Sulaimanghazal88@gmail.com</a></p>
+                        <p><i class="fas fa-phone"></i> <a href="tel:+358449740038">+358 44 9740038</a></p>
                     </div>
                 </div>
                 <form id="booking-form" class="booking-form">
@@ -453,14 +412,13 @@
                         <li><a href="#location">Location</a></li>
                         <li><a href="#events">Events</a></li>
                         <li><a href="#story">Our Story</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#booking">Book Now</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@mrdelicious.fi">info@mrdelicious.fi</a></p>
-                    <p><i class="fas fa-phone"></i> <a href="tel:0449740038">044 974 0038</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:Sulaimanghazal88@gmail.com">Sulaimanghazal88@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+358449740038">+358 44 9740038</a></p>
                 </div>
                 <div class="footer-social">
                     <h3>Follow Us</h3>
@@ -472,10 +430,19 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Mr. Delicious Food Truck. All rights reserved.</p>
+                <p>&copy; 2025 Mr. Delicious Food Truck. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <div class="gallery-modal">
+        <span class="gallery-close">&times;</span>
+        <img class="gallery-modal-content" id="modal-image">
+        <div class="gallery-modal-nav">
+            <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
