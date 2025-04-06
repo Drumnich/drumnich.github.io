@@ -348,7 +348,10 @@
                         <p><i class="fas fa-phone"></i> <a href="tel:+358449740038">+358 44 9740038</a></p>
                     </div>
                 </div>
-                <form id="booking-form" class="booking-form">
+                <form action="https://formsubmit.co/Sulaimanghazal88@gmail.com" method="POST" id="booking-form" class="booking-form">
+                    <input type="hidden" name="_next" value="https://mrdeliciousfoodtrucks.com/thank-you.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" required>
@@ -375,7 +378,7 @@
                     </div>
                     <div class="form-group">
                         <label for="guests">Expected Number of Guests</label>
-                        <input type="number" id="guests" name="guests" required>
+                        <input type="number" id="guests" name="guests" min="1" required>
                     </div>
                     <div class="form-group">
                         <label for="event-type">Event Type</label>
