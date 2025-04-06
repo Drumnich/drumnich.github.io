@@ -194,4 +194,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Run once on page load
     animateOnScroll();
+
+     // Set event date min to tomorrow
+     const eventDateInput = document.getElementById("event-date");
+     if (eventDateInput) {
+         const today = new Date();
+        const tomorrow = new Date(today);
+         tomorrow.setDate(tomorrow.getDate() + 1);
+         const minDate = tomorrow.toISOString().split("T")[0];
+         eventDateInput.min = minDate;
+     }
+    
 });
