@@ -42,7 +42,7 @@ To add new events, find the "Events" section in the `index.html` file and add a 
 
 ## Deployment
 
-To deploy this website, simply upload all files and directories to your web hosting provider.
+This website is private. Do not replicate, nor duplicate this website. For a reconstruction, or recreation please contact sole owner of the Repo.
 
 ## Contact
 
