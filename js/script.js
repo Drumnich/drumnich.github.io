@@ -138,13 +138,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Form submission handling
-    const bookingForm = document.getElementById('booking-form');
-    if (bookingForm) {
-        bookingForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             // In a real implementation, you would send this data to a server
             // For now, we'll just show a success message
             const formData = new FormData(bookingForm);
